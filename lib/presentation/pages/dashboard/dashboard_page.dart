@@ -5,7 +5,7 @@ import 'package:pulse_board_app/app_route/app_routing.gr.dart';
 import 'package:pulse_board_app/application/providers/sensor_data_provider.dart';
 import 'package:pulse_board_app/application/providers/simulate_settings_provider.dart';
 import 'package:pulse_board_app/data/model/sensor/sensor_data_model.dart';
-import 'package:pulse_board_app/data/repo/sensor/simulation_data_provider.dart';
+import 'package:pulse_board_app/application/providers/simulation_data_provider.dart';
 import 'package:pulse_board_app/presentation/charts/bubble_chart_widget.dart';
 import 'package:pulse_board_app/presentation/charts/toggle_widget.dart';
 import 'package:pulse_board_app/presentation/charts/label_color_widget.dart';

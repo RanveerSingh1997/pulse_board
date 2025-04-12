@@ -32,8 +32,7 @@ class ResponsiveWidget extends StatelessWidget {
           case DeviceScreenType.tablet:
             return tablet;
           case DeviceScreenType.mobile:
-          default:
-            return mobile;
+          return mobile;
         }
       },
     );

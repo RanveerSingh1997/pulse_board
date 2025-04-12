@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:injectable/injectable.dart';
 import 'package:pulse_board_app/data/model/sensor_detail/sensor_detail_model.dart';
 import 'package:pulse_board_app/data/repo/sensor/sensor_data_repo.dart';
@@ -24,9 +23,6 @@ class SensorDataRepoImplementation extends ISensorDataRepository {
 
   @override
   Future<SensorDetailDataModel> getSensorDetailData() async {
-    var sensorDataModel = await sensorDaraService.getSensorDetailData();
-    debugPrint(sensorDataModel.toString());
-    return SensorDetailDataModel.fromJson(sensorDataModel);
     try {
       var sensorDataModel = await sensorDaraService.getSensorDetailData();
       return SensorDetailDataModel.fromJson(sensorDataModel);
