@@ -3,8 +3,6 @@ import 'dart:convert';
 import 'package:flutter/services.dart';
 import 'package:injectable/injectable.dart';
 
-import '../model/sensor/sensor_data_model.dart' show SensorDataModel;
-
 @LazySingleton()
 class SensorDataService {
   final String sensorDataPath = "assets/mock/sensor_data.json";

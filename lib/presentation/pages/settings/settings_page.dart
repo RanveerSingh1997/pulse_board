@@ -74,6 +74,7 @@ class SettingsPage extends StatelessWidget {
                   ),
                   const SizedBox(height: 24),
                   ElevatedButton.icon(
+                    key:ValueKey("ResetButton"),
                     onPressed: () {
                       ref.read(simulationSettingsProvider.notifier).reset();
                     },
