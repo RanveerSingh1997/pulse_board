@@ -22,20 +22,18 @@ To execute all available unit and widget tests, use the following command:
 ```bash```
 ```flutter test```
 
+```
 lib/
 │
 |-- approute
 ├── application/           # Riverpod providers and application-level logic
 │   └── providers/         # State management for sensors, metrics, and simulations
-│
 ├── core/                  # DI setup and other core services/utilities
 │   └── di/                # GetIt dependency injection configuration
-│
 ├── data/                  
 │   ├── model/             # Data models (Sensor, Simulation, Details) with Freezed
 │   └── repo/              # Repository interfaces and mock implementations
 |   |__ service/           # Data service class for providing mock data 
-│
 ├── presentation/          # UI layer (pages, widgets, charts)
 │   ├── charts/            # Line charts and anomaly timelines
 │   ├── common/            # Shared widgets (e.g., ResponsiveWidget)
@@ -43,17 +41,22 @@ lib/
 │       └── detail/        # Detailed view of a selected sensor (modular widgets)
 |       |__ dashboard/
 |       |__ settings/  
-│
 ├── shared/                # App-wide constants, enums, and helpers
 └── main.dart              # Entry point with routing setup using AutoRoute
 
-### Design Highlights 
+```
 
-#Riverpod: State management using StateProvider, StateNotifierProvider, and FutureProvider for flexibility and testability.
-#AutoRoute: Declarative routing with automatic code generation for cleaner navigation.
-#Freezed: Immutable data models with union types and copyWith support.
-#Responsive UI: Built with custom ResponsiveWidget to adapt across mobile, tablet, and desktop screens.
-#Testable Architecture: Business logic and UI components are modular and test-covered.
+# Design Highlights 
+
+-> Riverpod: State management using StateProvider, StateNotifierProvider, and FutureProvider for flexibility and testability.
+
+-> AutoRoute: Declarative routing with automatic code generation for cleaner navigation.
+
+-> Freezed: Immutable data models with union types and copyWith support.
+
+-> Responsive UI: Built with custom ResponsiveWidget to adapt across mobile, tablet, and desktop screens.
+
+-> Testable Architecture: Business logic and UI components are modular and test-covered.
  
 ### Project Screenshot and Recording
 
