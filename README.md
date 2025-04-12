@@ -1,16 +1,20 @@
-# pulse_board_app
+# PulseBoard - Sensor Analytics Dashboard
 
-A new Flutter project.
+PulseBoard is a Flutter web application that visualizes real-time sensor data in a responsive and interactive dashboard. It provides charts, alerts, raw data, and simulation controls to emulate various sensor behaviors.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+##  Getting Started
 
-A few resources to get you started if this is your first Flutter project:
+### Run the Project
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Ensure Flutter is installed and you’re using a compatible version (Flutter 3.10+ recommended). Then run the app in Chrome:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash```
+flutter run -d chrome
+
+
+Runnning Test  cases
+To execute all available unit and widget tests, use the following command:
+```bash```
+flutter test
